@@ -172,6 +172,15 @@ body:after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;ba
 .metric-caveat{font:9px/1.6 'IBM Plex Mono',monospace;color:#b7b9ad;margin-top:auto;padding-top:15px}
 @media(max-width:760px){.data-visual-grid{grid-template-columns:1fr}.data-visual-panel{padding:15px}.data-visual-foot{font-size:8px}}
 
+
+.heatmap-reference{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:16px;padding:20px;background:#d8d4c5;color:#253126}
+.heatmap-reference h4{font:900 31px/.95 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:8px 0}
+.heatmap-reference p{font-size:11px;line-height:1.55;max-width:570px;color:#4c594d;margin:0}
+.heatmap-reference>a{font:9px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#a6533e;white-space:nowrap;text-decoration:underline;text-underline-offset:4px}
+.data-visual-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:900px){.data-visual-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.heatmap-reference{align-items:flex-start;flex-direction:column}}
+
 </style>
 </head>
 <body>
@@ -206,43 +215,49 @@ body:after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;ba
 </div>
 </div></div>
 <div class="file-section"><div class="file-section-head"><h3>02 / Statistical snapshot</h3><small>Club NXT · Challenger Pro League · 2024/25</small></div><div class="stats-snapshot"><div><strong>14</strong><small>League appearances</small></div><div><strong>423</strong><small>Minutes played</small></div><div><strong>3</strong><small>Starts</small></div><div><strong>2 + 2</strong><small>Goals + assists</small></div></div><div class="stats-snapshot"><div><strong>7</strong><small>Shots</small></div><div><strong>4</strong><small>Shots on target</small></div><div><strong>7</strong><small>Crosses</small></div><div><strong>6</strong><small>Tackles won</small></div></div><div class="stats-source">Source: FBref, 2024/25 Challenger Pro League season and match logs. 423 minutes equal 4.7 full-match equivalents; 11 of 14 appearances came as a substitute. The sample is limited and should not be read as a full-season performance profile.</div><div class="stats-source"><strong>International reference:</strong> Belgium U17 — 10 caps, 679 minutes and 1 goal recorded by the Belgian FA through May 2025. <a href="https://static.rbfa.be/project/publiek/jrinterfr/speler_PH_7276.htm" target="_blank" rel="noopener">Belgian FA player record ↗</a></div><div class="stats-source"><strong>Match-log detail:</strong> FBref records his three most productive league appearances in April 2025: goal + assist against RFC Liège (15 minutes), a goal against Beveren (82 minutes), and an assist against Francs Borains (68 minutes). <a href="https://fbref.com/en/players/8e7fe607/matchlogs/2024-2025/Jesse-Bisiwu-Match-Logs" target="_blank" rel="noopener">View match log ↗</a></div></div>
-<div class="file-section"><div class="file-section-head"><h3>03 / Attacking output</h3><small>Club Brugge NXT · 2025/26 · FotMob</small></div>
+
+<div class="file-section"><div class="file-section-head"><h3>03 / Match data & attacking profile</h3><small>FotMob · First Division B · 2025/26</small></div>
 <div class="data-visual-grid">
  <div class="data-visual-panel">
-  <div class="data-visual-kicker">01 / Shot profile</div>
-  <h4>14 attempts · 0.78 xG</h4>
-  <svg viewBox="0 0 600 330" role="img" aria-label="Shot profile split by location: six attempts inside the penalty area and eight outside, three on target">
-   <rect x="12" y="12" width="576" height="306" rx="2" fill="#1a2a20" stroke="#d8d4c5" stroke-width="2"/>
+  <div class="data-visual-kicker">01 / Shot distribution</div><h4>14 attempts · 0.78 xG</h4>
+  <svg viewBox="0 0 600 330" role="img" aria-label="Season shot distribution, six attempts inside the penalty area and eight from outside; exact shot coordinates are available on FotMob">
+   <rect x="12" y="12" width="576" height="306" fill="#1a2a20" stroke="#d8d4c5" stroke-width="2"/>
    <line x1="12" y1="165" x2="588" y2="165" stroke="#d8d4c5" opacity=".45"/>
    <circle cx="300" cy="165" r="44" fill="none" stroke="#d8d4c5" opacity=".45"/>
    <rect x="180" y="12" width="240" height="72" fill="none" stroke="#d8d4c5" opacity=".7"/>
    <rect x="235" y="12" width="130" height="30" fill="none" stroke="#d8d4c5" opacity=".7"/>
    <rect x="180" y="246" width="240" height="72" fill="none" stroke="#d8d4c5" opacity=".7"/>
    <rect x="235" y="288" width="130" height="30" fill="none" stroke="#d8d4c5" opacity=".7"/>
-   <circle cx="300" cy="165" r="5" fill="#d8d4c5"/>
-   <rect x="205" y="98" width="190" height="42" fill="#a6533e" opacity=".95"/>
-   <text x="300" y="125" fill="#fff" text-anchor="middle" font-size="18" font-family="Arial" font-weight="700">6 IN-BOX SHOTS</text>
-   <rect x="205" y="190" width="190" height="42" fill="#d58b69" opacity=".95"/>
-   <text x="300" y="217" fill="#1d2b21" text-anchor="middle" font-size="18" font-family="Arial" font-weight="700">8 OUTSIDE BOX</text>
-   <text x="300" y="305" fill="#f2eee2" text-anchor="middle" font-size="10" font-family="monospace">ZONE COUNTS ONLY · NOT SHOT COORDINATES</text>
+   <rect x="205" y="98" width="190" height="42" fill="#a6533e"/><text x="300" y="125" fill="#fff" text-anchor="middle" font-size="18" font-family="Arial" font-weight="700">6 INSIDE BOX</text>
+   <rect x="205" y="190" width="190" height="42" fill="#d58b69"/><text x="300" y="217" fill="#1d2b21" text-anchor="middle" font-size="18" font-family="Arial" font-weight="700">8 OUTSIDE BOX</text>
+   <text x="300" y="305" fill="#f2eee2" text-anchor="middle" font-size="10" font-family="monospace">ZONE TOTALS · NOT INDIVIDUAL SHOT LOCATIONS</text>
   </svg>
-  <div class="data-visual-foot"><span><b>3 / 14</b> on target</span><span><b>0.78</b> expected goals</span></div>
+  <div class="data-visual-foot"><span><b>3 / 14</b> on target</span><span><b>0</b> goals</span></div>
+  <p class="metric-caveat">The diagram shows only the published zone totals. It does not plot invented shot coordinates.</p>
  </div>
  <div class="data-visual-panel data-metrics">
-  <div class="data-visual-kicker">02 / Attacking contribution</div>
-  <h4>Actions & progression</h4>
+  <div class="data-visual-kicker">02 / Ball progression</div><h4>In possession</h4>
   <div class="metric-line"><span>Successful dribbles</span><b>29</b></div>
+  <div class="metric-line"><span>Dribble success</span><b>45.3%</b></div>
+  <div class="metric-line"><span>Touches</span><b>464</b></div>
+  <div class="metric-line"><span>Touches in opposition box</span><b>28</b></div>
+  <div class="metric-line"><span>Dispossessed</span><b>16</b></div>
+  <p class="metric-caveat">Season totals. These indicators describe volume and outcomes, not where on the pitch each action occurred.</p>
+ </div>
+ <div class="data-visual-panel data-metrics">
+  <div class="data-visual-kicker">03 / Creation & distribution</div><h4>Passing contribution</h4>
   <div class="metric-line"><span>Line-breaking passes</span><b>38</b></div>
   <div class="metric-line"><span>Chances created</span><b>8</b></div>
+  <div class="metric-line"><span>Expected assists</span><b>1.16</b></div>
   <div class="metric-line"><span>Successful crosses</span><b>6</b></div>
-  <div class="metric-line"><span>Touches in opposition box</span><b>28</b></div>
-  <div class="metric-line"><span>Minutes played</span><b>1,013</b></div>
-  <p class="metric-caveat">Season totals reported by FotMob for the 2025/26 Challenger Pro League. These are event totals, not per-90 rates or positional coordinates.</p>
+  <div class="metric-line"><span>Pass accuracy</span><b>78.9%</b></div>
+  <p class="metric-caveat">Season totals. Passing locations and receiving zones are not inferable from these aggregate figures.</p>
  </div>
 </div>
-<div class="stats-source">Source: <a href="https://www.fotmob.com/it/players/1656591/jesse-bisiwu" target="_blank" rel="noopener">FotMob player statistics ↗</a>. Shot-zone counts and event totals are presented as published; no individual shot locations or player-tracking coordinates are inferred.</div>
+<div class="stats-source">Source: <a href="https://www.fotmob.com/en-GB/players/1656591/jesse-bisiwu" target="_blank" rel="noopener">FotMob — Jesse Bisiwu, 2025/26 season statistics and interactive heatmap ↗</a>. FotMob reports 14 shots, 3 on target, 0 goals, 0.78 xG, 464 touches and the event totals shown above. The original interactive heatmap remains available on the source page; no positional coordinates have been reconstructed from aggregate statistics.</div>
+<div class="heatmap-reference"><div><span class="data-visual-kicker">04 / Positional reference</span><h4>Season heatmap</h4><p>Consult the original interactive map to inspect the recorded touch distribution. It is kept separate from the match-specific tactical reconstruction below.</p></div><a href="https://www.fotmob.com/en-GB/players/1656591/jesse-bisiwu" target="_blank" rel="noopener">OPEN OFFICIAL HEATMAP ↗</a></div>
 </div>
-<div class="file-section"><div class="file-section-head"><h3>04 / Tactical case study</h3><small>Club NXT v SK Beveren · 13 April 2025</small></div><div class="action-study"><div><div class="action-pitch"><svg viewBox="0 0 680 420" role="img" aria-label="Schematic football pitch showing a long forward carry from the defensive half into the attacking half"><defs><marker id="routeArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#d58b69"/></marker></defs><rect x="8" y="8" width="664" height="404" fill="none" stroke="#d8d4c5" stroke-width="2"/><line x1="340" y1="8" x2="340" y2="412" stroke="#d8d4c5" opacity=".55"/><circle cx="340" cy="210" r="62" fill="none" stroke="#d8d4c5" opacity=".55"/><circle cx="340" cy="210" r="3" fill="#d8d4c5"/><rect x="8" y="112" width="95" height="196" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="8" y="160" width="36" height="100" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="577" y="112" width="95" height="196" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="636" y="160" width="36" height="100" fill="none" stroke="#d8d4c5" opacity=".55"/><path d="M145 285 C190 270 220 250 255 220 S330 175 380 155 S460 115 520 95" fill="none" stroke="#d58b69" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 2" marker-end="url(#routeArrow)"/><circle cx="145" cy="285" r="11" fill="#d58b69"/><circle cx="520" cy="95" r="11" fill="#d58b69"/><text x="125" y="318" fill="#f3f0e6" font-size="13" font-family="monospace">BALL RECOVERY</text><text x="430" y="70" fill="#f3f0e6" font-size="13" font-family="monospace">ATTACK / FINISH</text><text x="340" y="395" fill="#b8c1b5" font-size="11" text-anchor="middle" font-family="monospace">SCHEMATIC ROUTE — NOT TRACKING COORDINATES</text></svg></div><div class="action-legend"><span><i></i> Reported solo carry</span><span>→ Goalward progression</span></div></div><div class="action-notes"><small>Evidence-led sequence / 01</small><h4>From deep recovery to finish.</h4><p>Against SK Beveren on 13 April 2025, Bisiwu scored in the 66th minute after a solo run described by contemporary match coverage as starting from his own penalty area following a cleared corner. The report describes a run of roughly 90 metres.</p><p><strong>Scouting relevance:</strong> the sequence offers a clear example of long-distance ball carrying and direct progression after a defensive transition. It is one observable action within a broader assessment, rather than a standalone measure of the player's overall profile.</p><p><strong>Visualisation note:</strong> the route is a schematic illustration based on the published match account; it does not represent tracking coordinates.</p><p><a href="https://www.voetbalprimeur.be/videos/1292077/jesse-bisiwu-scoort-schitterend-doelpunt-voor-club-nxt-tegen-sk-beveren.html" target="_blank" rel="noopener">Watch / read the match clip ↗</a></p></div></div></div>
+<div class="file-section"><div class="file-section-head"><h3>04 / Tactical case study</h3><small>Club NXT v SK Beveren · 13 April 2025</small></div><div class="action-study"><div><div class="action-pitch"><svg viewBox="0 0 680 420" role="img" aria-label="Schematic football pitch showing a long forward carry from the defensive half into the attacking half"><defs><marker id="routeArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#d58b69"/></marker></defs><rect x="8" y="8" width="664" height="404" fill="none" stroke="#d8d4c5" stroke-width="2"/><line x1="340" y1="8" x2="340" y2="412" stroke="#d8d4c5" opacity=".55"/><circle cx="340" cy="210" r="62" fill="none" stroke="#d8d4c5" opacity=".55"/><circle cx="340" cy="210" r="3" fill="#d8d4c5"/><rect x="8" y="112" width="95" height="196" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="8" y="160" width="36" height="100" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="577" y="112" width="95" height="196" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="636" y="160" width="36" height="100" fill="none" stroke="#d8d4c5" opacity=".55"/><path d="M145 285 C190 270 220 250 255 220 S330 175 380 155 S460 115 520 95" fill="none" stroke="#d58b69" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 2" marker-end="url(#routeArrow)"/><circle cx="145" cy="285" r="11" fill="#d58b69"/><circle cx="520" cy="95" r="11" fill="#d58b69"/><text x="125" y="318" fill="#f3f0e6" font-size="13" font-family="monospace">BALL RECOVERY</text><text x="430" y="70" fill="#f3f0e6" font-size="13" font-family="monospace">ATTACK / FINISH</text><text x="340" y="395" fill="#b8c1b5" font-size="11" text-anchor="middle" font-family="monospace">REPORTED SOLO RUN · SCHEMATIC PATH</text></svg></div><div class="action-legend"><span><i></i> Reported solo carry</span><span>→ Goalward progression</span></div></div><div class="action-notes"><small>Evidence-led sequence / 01</small><h4>From deep recovery to finish.</h4><p>Against SK Beveren on 13 April 2025, Bisiwu scored in the 66th minute after a solo run described by contemporary match coverage as starting from his own penalty area following a cleared corner. The report describes a run of roughly 90 metres.</p><p><strong>Scouting relevance:</strong> the sequence offers a clear example of long-distance ball carrying and direct progression after a defensive transition. It is one observable action within a broader assessment, rather than a standalone measure of the player's overall profile.</p><p><strong>Visualisation note:</strong> the route is a schematic illustration based on the published match account; it does not represent tracking coordinates.</p><p><a href="https://www.walfoot.be/news/2025-04-13/-un-jeune-talent-namurois-ouvre-les-hostilites-un-solo-de-90-metres-pour-lui-repondre--match-agite-entre-deux-equipes-du-top-6-en-d1b/amp" target="_blank" rel="noopener">Match report and DAZN clip ↗</a></p></div></div></div>
 <div class="file-section"><div class="file-section-head"><h3>05 / The analysis</h3><small>Observation framework</small></div>
 <div class="analysis-grid">
 <div class="analysis-card"><span class="idx">01 / Technical</span><h4>Ball mastery</h4><p>First touch, close control, 1v1 execution and ability to manipulate the ball at speed. <strong>Official profile descriptor:</strong> dribbling ability.</p></div>
