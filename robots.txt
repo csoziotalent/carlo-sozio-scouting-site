@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carlo-sozio-scouting.pages.dev/sitemap.xml
