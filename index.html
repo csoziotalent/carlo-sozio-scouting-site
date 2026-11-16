@@ -181,6 +181,19 @@ body:after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;ba
 @media(max-width:900px){.data-visual-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.heatmap-reference{align-items:flex-start;flex-direction:column}}
 
+
+/* Evidence board — source-linked visual appendix */
+.evidence-board{margin-top:24px;background:#d8d4c5;color:#1c2a20;padding:24px}
+.evidence-board-head{display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid rgba(25,38,29,.25);padding-bottom:12px;margin-bottom:17px;font:9px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:#a94a37}
+.evidence-board-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(25,38,29,.25);border:1px solid rgba(25,38,29,.25)}
+.evidence-board-card{background:#e7e3d8;padding:18px;min-height:205px;display:flex;flex-direction:column}
+.evidence-board-card small{font:9px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:#a94a37}
+.evidence-board-card h4{font:900 29px/.9 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:19px 0 10px;color:#1c2a20}
+.evidence-board-card p{font:12px/1.65 Inter,sans-serif;color:#4c594e;margin:0 0 16px}
+.evidence-board-card a{margin-top:auto;font:9px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#a94a37;border-bottom:1px solid rgba(169,74,55,.4);padding-bottom:7px;align-self:flex-start}
+.evidence-board-foot{font:10px/1.6 'IBM Plex Mono',monospace;color:#586255;margin-top:14px}
+@media(max-width:760px){.evidence-board{padding:17px}.evidence-board-grid{grid-template-columns:1fr}.evidence-board-head{align-items:flex-start;flex-direction:column}.evidence-board-card{min-height:0}}
+
 </style>
 </head>
 <body>
@@ -256,6 +269,27 @@ body:after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;ba
 </div>
 <div class="stats-source">Source: <a href="https://www.fotmob.com/en-GB/players/1656591/jesse-bisiwu" target="_blank" rel="noopener">FotMob — Jesse Bisiwu, 2025/26 season statistics and interactive heatmap ↗</a>. FotMob reports 14 shots, 3 on target, 0 goals, 0.78 xG, 464 touches and the event totals shown above. The original interactive heatmap remains available on the source page; no positional coordinates have been reconstructed from aggregate statistics.</div>
 <div class="heatmap-reference"><div><span class="data-visual-kicker">04 / Positional reference</span><h4>Season heatmap</h4><p>Consult the original interactive map to inspect the recorded touch distribution. It is kept separate from the match-specific tactical reconstruction below.</p></div><a href="https://www.fotmob.com/en-GB/players/1656591/jesse-bisiwu" target="_blank" rel="noopener">OPEN OFFICIAL HEATMAP ↗</a></div>
+<div class="evidence-board">
+ <div class="evidence-board-head"><span class="data-visual-kicker">Evidence board / Positional & match context</span><span>Sources checked · public data</span></div>
+ <div class="evidence-board-grid">
+  <div class="evidence-board-card">
+   <small>01 / Positional data</small><h4>Recorded touch distribution</h4>
+   <p>FotMob provides Jesse Bisiwu's season heatmap for the 2025/26 First Division B campaign, based on 464 recorded touches. The interactive source is linked above; the underlying touch coordinates are not republished here as a fabricated static map.</p>
+   <a href="https://www.fotmob.com/en-GB/players/1656591/jesse-bisiwu" target="_blank" rel="noopener">VIEW FOTMOB HEATMAP ↗</a>
+  </div>
+  <div class="evidence-board-card">
+   <small>02 / Receiving & off-ball</small><h4>Match-level review</h4>
+   <p>Public season aggregates do not provide a verified receiving-zone or off-ball tracking dataset. These actions are therefore not plotted as measured coordinates. The documented Beveren sequence below is treated separately as a video-backed attacking transition.</p>
+   <a href="https://www.sofascore.com/it/football/player/jesse-bisiwu/1506988" target="_blank" rel="noopener">VIEW MATCH HEATMAPS ON SOFASCORE ↗</a>
+  </div>
+  <div class="evidence-board-card">
+   <small>03 / Shot distribution</small><h4>Season shot profile</h4>
+   <p>14 attempts, 3 on target, 0 goals and 0.78 xG in the 2025/26 First Division B sample. FotMob records 6 shots inside the box and 8 from outside; the diagram above shows zone totals only, not invented shot locations.</p>
+   <a href="https://www.fotmob.com/en-GB/players/1656591/jesse-bisiwu" target="_blank" rel="noopener">VIEW SHOT MAP & METRICS ↗</a>
+  </div>
+ </div>
+ <div class="evidence-board-foot">The 2024/25 Club NXT assessment and the 2025/26 statistical sample are separate periods. Season-level statistics are not presented as evidence of the original 2025 scouting observation.</div>
+</div>
 </div>
 <div class="file-section"><div class="file-section-head"><h3>04 / Tactical case study</h3><small>Club NXT v SK Beveren · 13 April 2025</small></div><div class="action-study"><div><div class="action-pitch"><svg viewBox="0 0 680 420" role="img" aria-label="Schematic football pitch showing a long forward carry from the defensive half into the attacking half"><defs><marker id="routeArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#d58b69"/></marker></defs><rect x="8" y="8" width="664" height="404" fill="none" stroke="#d8d4c5" stroke-width="2"/><line x1="340" y1="8" x2="340" y2="412" stroke="#d8d4c5" opacity=".55"/><circle cx="340" cy="210" r="62" fill="none" stroke="#d8d4c5" opacity=".55"/><circle cx="340" cy="210" r="3" fill="#d8d4c5"/><rect x="8" y="112" width="95" height="196" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="8" y="160" width="36" height="100" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="577" y="112" width="95" height="196" fill="none" stroke="#d8d4c5" opacity=".55"/><rect x="636" y="160" width="36" height="100" fill="none" stroke="#d8d4c5" opacity=".55"/><path d="M145 285 C190 270 220 250 255 220 S330 175 380 155 S460 115 520 95" fill="none" stroke="#d58b69" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 2" marker-end="url(#routeArrow)"/><circle cx="145" cy="285" r="11" fill="#d58b69"/><circle cx="520" cy="95" r="11" fill="#d58b69"/><text x="125" y="318" fill="#f3f0e6" font-size="13" font-family="monospace">OWN PENALTY AREA</text><text x="430" y="70" fill="#f3f0e6" font-size="13" font-family="monospace">ATTACK / FINISH</text><text x="340" y="395" fill="#b8c1b5" font-size="11" text-anchor="middle" font-family="monospace">90-METRE SOLO RUN · SCHEMATIC PATH</text></svg></div><div class="action-legend"><span><i></i> Reported solo carry</span><span>→ Goalward progression</span></div></div><div class="action-notes"><small>Evidence-led sequence / 01</small><h4>From deep recovery to finish.</h4><p>On 13 April 2025, in Club NXT’s 2–2 draw with SK Beveren, Bisiwu scored in the 66th minute after a solo run of approximately 90 metres. Walfoot reports that the move began from his own penalty area after a cleared corner.</p><p><strong>Scouting relevance:</strong> the sequence offers a clear example of long-distance ball carrying and direct progression after a defensive transition. It is one observable action within a broader assessment, rather than a standalone measure of the player's overall profile.</p><p><strong>Visualisation note:</strong> the route is a schematic illustration based on the published match account; it does not represent tracking coordinates.</p><p><a href="https://www.walfoot.be/news/2025-04-13/-un-jeune-talent-namurois-ouvre-les-hostilites-un-solo-de-90-metres-pour-lui-repondre--match-agite-entre-deux-equipes-du-top-6-en-d1b/amp" target="_blank" rel="noopener">Match report and DAZN clip ↗</a></p></div></div></div>
 <div class="file-section"><div class="file-section-head"><h3>05 / The analysis</h3><small>Observation framework</small></div>
